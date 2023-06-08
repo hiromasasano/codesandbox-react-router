@@ -18,17 +18,7 @@ export default function App() {
       </div>
       <Routes>
         <Route path={`/`} element={<Home />} />
-      </Routes>
-      <Routes>
-        <Route path={`/page1`} element={<Page1 />} render={() => (
-          <Routes>
-            <Route path={`/`} element={<Page1 />} />
-            <Route path={`/page1/detailA`} element={<Page1DetailA />} />
-            <Route path={`/page1/detailB`} element={<Page1DetailB />} />
-          </Routes>
-        )}/>
-      </Routes>
-      <Routes>
+        <Route path={`/page1`} element={<Page1 />} />
         <Route path={`/page2`} element={<Page2 />} />
       </Routes>
     </BrowserRouter>
