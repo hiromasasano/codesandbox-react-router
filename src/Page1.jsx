@@ -1,6 +1,4 @@
-import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
-import { Page1DetailA } from "./Page1DetailA";
-import { Page1DetailB } from "./Page1DetailB";
+import { Link } from "react-router-dom";
 
 export const Page1 = () => {
   return (
@@ -9,11 +7,6 @@ export const Page1 = () => {
       <Link to={`/page1/detailA`}>DetailA</Link>
       <br />
       <Link to={`/page1/detailB`}>DetailB</Link>
-  
-      <Routes>
-            <Route path={`/page1/detailA`} element={<Page1DetailA />} />
-            <Route path={`/page1/detailB`} element={<Page1DetailB />} />
-      </Routes>
     </div>
   );
 };
